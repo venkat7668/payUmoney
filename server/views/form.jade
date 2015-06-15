@@ -1,0 +1,102 @@
+// Created by Venkat on 30-06-2014.
+html
+    head
+        script(src='http://code.jquery.com/jquery-1.11.1.min.js')
+        script(src='/public/js/payment.js')
+    body
+        h2 PayU Form
+        br
+        form(action='https://test.payu.in/_payment', method='post', name='payuForm')
+            input(type='hidden', name='key', value='JBZaLc')
+            input(type='hidden', name='hash', value='')
+            input(type='hidden', name='txnid', value='440335b3b3030188ca78')
+            table
+                tr
+                    td
+                        b Mandatory Parameters
+                tr
+                    td Amount:
+                    td
+                        input(name='amount', value='')
+                    td First Name:
+                    td
+                        input#firstname(name='firstname', value='')
+                tr
+                    td Email:
+                    td
+                        input#email(name='email', value='')
+                    td Phone:
+                    td
+                        input(name='phone', value='')
+                tr
+                    td Product Info:
+                    td(colspan='3')
+                        textarea(name='productinfo')
+                tr
+                    td Success URI:
+                    td(colspan='3')
+                        input(name='surl', value='', size='64')
+                tr
+                    td Failure URI:
+                    td(colspan='3')
+                        input(name='furl', value='', size='64')
+                tr
+                    td Service Provider:
+                    td(colspan='3')
+                        input(name='service_provider', value='payu_paisa', size='64')
+                tr
+                    td
+                        b Optional Parameters
+                tr
+                    td Last Name:
+                    td
+                        input#lastname(name='lastname', value='')
+                    td Cancel URI:
+                    td
+                        input(name='curl', value='')
+                tr
+                    td Address1:
+                    td
+                        input(name='address1', value='')
+                    td Address2:
+                    td
+                        input(name='address2', value='')
+                tr
+                    td City:
+                    td
+                        input(name='city', value='')
+                    td State:
+                    td
+                        input(name='state', value='')
+                tr
+                    td Country:
+                    td
+                        input(name='country', value='')
+                    td Zipcode:
+                    td
+                        input(name='zipcode', value='')
+                tr
+                    td UDF1:
+                    td
+                        input(name='udf1', value='')
+                    td UDF2:
+                    td
+                        input(name='udf2', value='')
+                tr
+                    td UDF3:
+                    td
+                        input(name='udf3', value='')
+                    td UDF4:
+                    td
+                        input(name='udf4', value='')
+                tr
+                    td UDF5:
+                    td
+                        input(name='udf5', value='')
+                    td PG:
+                    td
+                        input(name='pg', value='')
+                tr
+                    td(colspan='4')
+                        input(type='submit', value='Submit')
+
